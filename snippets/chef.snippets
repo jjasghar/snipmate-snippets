@@ -243,7 +243,7 @@ snippet bash
 		user "${2:root}"
 		cwd "${3:/tmp}"
 		creates "${4:maybe}"
-		code <<cwd-EOH
+		code <<-EOH
 		STATUS=0
 		  $0 || STATUS=1
 		exit $STATUS
@@ -254,7 +254,7 @@ snippet python
 	python "${1:install something}" do
 		user "${2:root}"
 		cwd "${3:/tmp}"
-		code <<-cwdEOH
+		code <<-EOH
 		$0
 		EOH
 	end
@@ -265,7 +265,7 @@ snippet script
 			user "${2:root}"
 			cwd "${3:/tmp}"
 			creates "${4:maybe}"
-			code <<cwd-EOH
+			code <<-EOH
 			STATUS=0
 			  $0 || STATUS=1
 			exit $STATUS
