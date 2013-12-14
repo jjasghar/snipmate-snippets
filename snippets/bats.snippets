@@ -21,4 +21,4 @@ snippet status
 
 snippet run
 	run foo
-	  [ "$status" -eq 0 ]
+	[ "$status" -eq ${1:0} ]
