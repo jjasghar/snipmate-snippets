@@ -10,3 +10,8 @@ cd ~/.vim/snippets
 ln -s ~/repo/snipmate-snippets/snippets/chef.snippets ./
 ```
 
+## Enable
+Enable syntax for chef files some like this, add this to your `.vimrc`:
+```
+autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+```
